@@ -4,7 +4,7 @@
 export const config = { schedule: "0 */6 * * *" };
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-const REPO         = "indivisibleusa/indivisibleusa-site";
+const REPO         = "indivisibleusa/indivisibleusa-signup";
 const FILE_PATH    = "counts.json";
 
 async function fetchNextData(url) {
