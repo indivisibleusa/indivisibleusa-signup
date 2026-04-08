@@ -54,7 +54,7 @@ async function pushToGitHub(counts, sha) {
     method: "PUT",
     headers: { Authorization: `token ${GITHUB_TOKEN}`, "Content-Type": "application/json" },
     body: JSON.stringify({
-      message: `chore: update follower counts ${new Date().toISOString().slice(0,10)}`,
+      message: `chore: update follower counts ${new Date().toISOString().slice(0,10)} [skip netlify]`,
       content,
       ...(sha ? { sha } : {})
     }),
